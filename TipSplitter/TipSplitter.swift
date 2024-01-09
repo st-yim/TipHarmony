@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct WeSplitApp: App {
+struct TipSplitter: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

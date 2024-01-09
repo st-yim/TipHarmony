@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FABE825E2B31401C00996F85 /* WeSplitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE825D2B31401C00996F85 /* WeSplitApp.swift */; };
+		FABE825E2B31401C00996F85 /* TipSplitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE825D2B31401C00996F85 /* TipSplitter.swift */; };
 		FABE82602B31401C00996F85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE825F2B31401C00996F85 /* ContentView.swift */; };
 		FABE82622B31401E00996F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABE82612B31401E00996F85 /* Assets.xcassets */; };
 		FABE82652B31401E00996F85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABE82642B31401E00996F85 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FABE825A2B31401C00996F85 /* WeSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FABE825D2B31401C00996F85 /* WeSplitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeSplitApp.swift; sourceTree = "<group>"; };
+		FABE825A2B31401C00996F85 /* TipSplitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipSplitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABE825D2B31401C00996F85 /* TipSplitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipSplitter.swift; sourceTree = "<group>"; };
 		FABE825F2B31401C00996F85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FABE82612B31401E00996F85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FABE82642B31401E00996F85 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 		FABE82512B31401C00996F85 = {
 			isa = PBXGroup;
 			children = (
-				FABE825C2B31401C00996F85 /* WeSplit */,
+				FABE825C2B31401C00996F85 /* TipSplitter */,
 				FABE825B2B31401C00996F85 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +43,20 @@
 		FABE825B2B31401C00996F85 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FABE825A2B31401C00996F85 /* WeSplit.app */,
+				FABE825A2B31401C00996F85 /* TipSplitter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FABE825C2B31401C00996F85 /* WeSplit */ = {
+		FABE825C2B31401C00996F85 /* TipSplitter */ = {
 			isa = PBXGroup;
 			children = (
-				FABE825D2B31401C00996F85 /* WeSplitApp.swift */,
+				FABE825D2B31401C00996F85 /* TipSplitter.swift */,
 				FABE825F2B31401C00996F85 /* ContentView.swift */,
 				FABE82612B31401E00996F85 /* Assets.xcassets */,
 				FABE82632B31401E00996F85 /* Preview Content */,
 			);
-			path = WeSplit;
+			path = TipSplitter;
 			sourceTree = "<group>";
 		};
 		FABE82632B31401E00996F85 /* Preview Content */ = {
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FABE82592B31401C00996F85 /* WeSplit */ = {
+		FABE82592B31401C00996F85 /* TipSplitter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FABE82682B31401E00996F85 /* Build configuration list for PBXNativeTarget "WeSplit" */;
+			buildConfigurationList = FABE82682B31401E00996F85 /* Build configuration list for PBXNativeTarget "TipSplitter" */;
 			buildPhases = (
 				FABE82562B31401C00996F85 /* Sources */,
 				FABE82572B31401C00996F85 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = WeSplit;
+			name = TipSplitter;
 			productName = WeSplit;
-			productReference = FABE825A2B31401C00996F85 /* WeSplit.app */;
+			productReference = FABE825A2B31401C00996F85 /* TipSplitter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FABE82552B31401C00996F85 /* Build configuration list for PBXProject "WeSplit" */;
+			buildConfigurationList = FABE82552B31401C00996F85 /* Build configuration list for PBXProject "TipSplitter" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FABE82592B31401C00996F85 /* WeSplit */,
+				FABE82592B31401C00996F85 /* TipSplitter */,
 			);
 		};
 /* End PBXProject section */
@@ -138,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FABE82602B31401C00996F85 /* ContentView.swift in Sources */,
-				FABE825E2B31401C00996F85 /* WeSplitApp.swift in Sources */,
+				FABE825E2B31401C00996F85 /* TipSplitter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +271,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WeSplit/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TipSplitter/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -284,7 +284,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = syim.WeSplit;
+				PRODUCT_BUNDLE_IDENTIFIER = syim.TipSplitter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -299,7 +299,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WeSplit/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TipSplitter/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -312,7 +312,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = syim.WeSplit;
+				PRODUCT_BUNDLE_IDENTIFIER = syim.TipSplitter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -323,7 +323,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FABE82552B31401C00996F85 /* Build configuration list for PBXProject "WeSplit" */ = {
+		FABE82552B31401C00996F85 /* Build configuration list for PBXProject "TipSplitter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FABE82662B31401E00996F85 /* Debug */,
@@ -332,7 +332,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FABE82682B31401E00996F85 /* Build configuration list for PBXNativeTarget "WeSplit" */ = {
+		FABE82682B31401E00996F85 /* Build configuration list for PBXNativeTarget "TipSplitter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FABE82692B31401E00996F85 /* Debug */,
