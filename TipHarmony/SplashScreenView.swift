@@ -23,7 +23,7 @@ struct SplashScreenView: View {
                     Image(systemName: "person.3")
                         .font(.system(size: 80))
                         .foregroundColor(.blue)
-                    Text("TipSplitter")
+                    Text("TipHarmony")
                         .font(Font.custom("Baskerville-Bold", size: 26))
                         .foregroundColor(.black.opacity(0.80))
                 }

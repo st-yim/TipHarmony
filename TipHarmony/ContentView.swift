@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  WeSplit
+//  TipHarmony
 //
 //  Created by Steven Yim on 12/18/23.
 //
@@ -124,7 +124,7 @@ struct ContentView: View {
                 }
             }
             .background(Color.white)
-            .navigationTitle("TipSplitter")
+            .navigationTitle("TipHarmony")
             .blur(radius: isCustomTipActive ? 3 : 0)
             .overlay(
                 CustomTipView(customTipAmount: $customTipAmount, shouldCalculate: $shouldCalculate, isActive: $isCustomTipActive, isCustomTipAmountEntered: $isCustomTipAmountEntered,
