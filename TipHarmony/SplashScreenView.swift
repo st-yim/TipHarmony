@@ -20,12 +20,12 @@ struct SplashScreenView: View {
             VStack {
                 VStack {
                     // Splash screen content with scaling and fading animation
-                    Image("logo3")
+                    Image("logo4")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 150, height: 150)
                     Text("TipHarmony")
-                        .font(Font.custom("Baskerville-Bold", size: 26))
+                        .font(Font.custom("Chalkduster", size: 30))
                         .foregroundColor(.black.opacity(0.80))
                 }
                 .scaleEffect(size) // Scale effect animation
