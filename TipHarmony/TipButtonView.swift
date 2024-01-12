@@ -1,6 +1,6 @@
 //
 //  TipButtonView.swift
-//  TipSplitter
+//  TipHarmony
 //
 //  Created by Steven Yim on 1/11/24.
 //

@@ -1,6 +1,6 @@
 //
 //  SplashScreenView.swift
-//  TipSplitter
+//  TipHarmony
 //
 //  Created by Steven Yim on 1/9/24.
 //
@@ -20,9 +20,10 @@ struct SplashScreenView: View {
             VStack {
                 VStack {
                     // Splash screen content with scaling and fading animation
-                    Image(systemName: "person.3")
-                        .font(.system(size: 80))
-                        .foregroundColor(.blue)
+                    Image("logo3")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 150, height: 150)
                     Text("TipHarmony")
                         .font(Font.custom("Baskerville-Bold", size: 26))
                         .foregroundColor(.black.opacity(0.80))
