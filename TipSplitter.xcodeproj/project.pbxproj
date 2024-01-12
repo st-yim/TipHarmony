@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA1A96632B50C4F8001026B7 /* CustomTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A96622B50C4F8001026B7 /* CustomTipView.swift */; };
+		FA1A96652B50C54D001026B7 /* TipButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A96642B50C54D001026B7 /* TipButtonView.swift */; };
+		FA1A96672B50C584001026B7 /* DarkModeToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A96662B50C584001026B7 /* DarkModeToggleView.swift */; };
 		FABE825E2B31401C00996F85 /* TipSplitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE825D2B31401C00996F85 /* TipSplitter.swift */; };
 		FABE82602B31401C00996F85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE825F2B31401C00996F85 /* ContentView.swift */; };
 		FABE82622B31401E00996F85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABE82612B31401E00996F85 /* Assets.xcassets */; };
 		FABE82652B31401E00996F85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABE82642B31401E00996F85 /* Preview Assets.xcassets */; };
+		FADC82912B4DD400006DA5E1 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC82902B4DD400006DA5E1 /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA1A96622B50C4F8001026B7 /* CustomTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTipView.swift; sourceTree = "<group>"; };
+		FA1A96642B50C54D001026B7 /* TipButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipButtonView.swift; sourceTree = "<group>"; };
+		FA1A96662B50C584001026B7 /* DarkModeToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeToggleView.swift; sourceTree = "<group>"; };
 		FABE825A2B31401C00996F85 /* TipSplitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipSplitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABE825D2B31401C00996F85 /* TipSplitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipSplitter.swift; sourceTree = "<group>"; };
 		FABE825F2B31401C00996F85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FABE82612B31401E00996F85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FABE82642B31401E00996F85 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FADC82902B4DD400006DA5E1 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				FABE825D2B31401C00996F85 /* TipSplitter.swift */,
 				FABE825F2B31401C00996F85 /* ContentView.swift */,
+				FA1A96662B50C584001026B7 /* DarkModeToggleView.swift */,
+				FA1A96642B50C54D001026B7 /* TipButtonView.swift */,
+				FA1A96622B50C4F8001026B7 /* CustomTipView.swift */,
+				FADC82902B4DD400006DA5E1 /* SplashScreenView.swift */,
 				FABE82612B31401E00996F85 /* Assets.xcassets */,
 				FABE82632B31401E00996F85 /* Preview Content */,
 			);
@@ -138,7 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FABE82602B31401C00996F85 /* ContentView.swift in Sources */,
+				FA1A96672B50C584001026B7 /* DarkModeToggleView.swift in Sources */,
+				FA1A96632B50C4F8001026B7 /* CustomTipView.swift in Sources */,
 				FABE825E2B31401C00996F85 /* TipSplitter.swift in Sources */,
+				FA1A96652B50C54D001026B7 /* TipButtonView.swift in Sources */,
+				FADC82912B4DD400006DA5E1 /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +288,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TipSplitter/Preview Content\"";
+				DEVELOPMENT_TEAM = 3644RKD5W6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -279,6 +296,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,6 +318,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TipSplitter/Preview Content\"";
+				DEVELOPMENT_TEAM = 3644RKD5W6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -307,6 +326,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

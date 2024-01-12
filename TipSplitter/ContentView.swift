@@ -7,21 +7,9 @@
 
 import SwiftUI
 
-struct DarkModeToggle: View {
-    @Binding var isDarkMode: Bool
-    
-    var body: some View {
-        Button(action: {
-            isDarkMode.toggle()
-        }) {
-            Image(systemName: isDarkMode ? "moon.fill" : "sun.max.fill")
-                .foregroundColor(isDarkMode ? .white : .yellow)
-        }
-    }
-}
-
 struct ContentView: View {
     
+    // Initial configuration for navigation bar appearance
     init() {
         let coloredNavAppearance = UINavigationBarAppearance()
         coloredNavAppearance.configureWithOpaqueBackground()
@@ -33,6 +21,7 @@ struct ContentView: View {
         UINavigationBar.appearance().scrollEdgeAppearance = coloredNavAppearance
     }
     
+    // State variables for user input and app state
     @State private var checkAmount = ""
     @State private var numberOfPeople = 2
     @State private var customTipAmount: String = ""
@@ -43,6 +32,7 @@ struct ContentView: View {
     @State private var isCustomTipAmountEntered = false // Track if custom tip amount is entered
     @State private var isDarkMode = false
 
+    // Computed properties for calculated values
     private var totalAmount: Double {
         guard let amount = Double(checkAmount), amount > 0 else {
             return 0
@@ -73,6 +63,7 @@ struct ContentView: View {
             VStack {
                 Spacer().frame(height: 0.17)
                 Form {
+                    // Amount and number of people input section
                     Section {
                         HStack {
                             Text("$")
@@ -90,6 +81,8 @@ struct ContentView: View {
                             }
                         }
                     }
+                    
+                    // Tip percentage selection section
                     Section(header: Text("TIP PERCENTAGE")) {
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 8) {
@@ -120,6 +113,8 @@ struct ContentView: View {
                                 .padding(.trailing)
                         }
                     }
+                    
+                    // Total amount and amount per person display sections
                     Section(header: Text("TOTAL AMOUNT (ORIGINAL AMOUNT + TIP)")) {
                         Text("$\(totalAmount, specifier: "%.2f")")
                     }
@@ -140,6 +135,7 @@ struct ContentView: View {
                     .opacity(isCustomTipActive ? 1 : 0)
             )
             .toolbar {
+                // Done button in the keyboard toolbar
                 ToolbarItem(placement: .keyboard) {
                     Button("Done") {
                         hideKeyboard()
@@ -150,14 +146,16 @@ struct ContentView: View {
                 }
             }
             .toolbar {
+                // Dark mode toggle button in the navigation bar
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    DarkModeToggle(isDarkMode: $isDarkMode) // Adding dark mode toggle button to the navigation bar
+                    DarkModeToggleView(isDarkMode: $isDarkMode)
                 }
             }
             .preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
 
+    // Function to reset input values
     func resetValues() {
         checkAmount = ""
         numberOfPeople = 2
@@ -168,88 +166,12 @@ struct ContentView: View {
     }
 }
 
+// Function to hide the keyboard
 func hideKeyboard() {
     UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
 }
 
-struct CustomTipView: View {
-    @Binding var customTipAmount: String
-    @Binding var shouldCalculate: Bool
-    @Binding var isActive: Bool
-    @Binding var isCustomTipAmountEntered: Bool
-    @Binding var isDarkMode: Bool
-
-    var customTipAmountDouble: Double {
-        return Double(customTipAmount) ?? 0.0
-    }
-
-    var body: some View {
-        VStack {
-            HStack {
-                TextField("Custom Tip (%)", text: $customTipAmount, onEditingChanged: { isEditing in
-                    isCustomTipAmountEntered = isEditing
-                })
-                .keyboardType(.decimalPad)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-            }
-            HStack {
-                Button("Close") {
-                    if !isCustomTipAmountEntered {
-                        hideKeyboard()
-                        isActive = false
-                    }
-                }
-                .disabled(isCustomTipAmountEntered)
-                .font(.headline)
-                .foregroundColor(Color.blue) // Set text color to black
-                .padding()
-
-                Button("Reset") {
-                    if !isCustomTipAmountEntered {
-                        customTipAmount = ""
-                    }
-                }
-                .disabled(isCustomTipAmountEntered)
-                .font(.headline)
-                .foregroundColor(.red)
-                .padding()
-            }
-        }
-        .background(isDarkMode ? Color.offWhite.edgesIgnoringSafeArea(.all) : Color.lightBlue.edgesIgnoringSafeArea(.all))
-
-        .opacity(isActive ? 1 : 0)
-        .cornerRadius(10)
-        .padding()
-    }
-}
-
-struct TipButtonView: View {
-    let percentage: Int
-    @Binding var selectedTipPercentage: Int?
-
-    var body: some View {
-        Button(action: {
-            if selectedTipPercentage == percentage {
-                selectedTipPercentage = nil // Deselect if already selected
-            } else {
-                selectedTipPercentage = percentage // Set selected tip
-            }
-        }) {
-            Text("\(percentage)%")
-                .padding(.horizontal, 12)
-                .padding(.vertical, 8)
-                .background(
-                    selectedTipPercentage == percentage ?
-                    Color.blue.opacity(0.8) :
-                    Color.blue
-                )
-                .foregroundColor(.white)
-                .cornerRadius(8)
-        }
-    }
-}
-
+// Extension for custom colors
 extension Color {
     static let offWhite = Color(red: 0.8, green: 0.8, blue: 0.8)
     static let lightBlue = Color(red: 0.75, green: 0.85, blue: 0.95)
