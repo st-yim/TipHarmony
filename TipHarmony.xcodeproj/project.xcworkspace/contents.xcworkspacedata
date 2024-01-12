@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:../TipSplitter">
+      location = "self:/Users/stevenyim/Library/Mobile Documents/com~apple~CloudDocs/100 Days of Swift/WeSplit/TipHarmony.xcodeproj">
    </FileRef>
 </Workspace>

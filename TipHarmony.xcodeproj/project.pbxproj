@@ -21,7 +21,7 @@
 		FA1A96622B50C4F8001026B7 /* CustomTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTipView.swift; sourceTree = "<group>"; };
 		FA1A96642B50C54D001026B7 /* TipButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipButtonView.swift; sourceTree = "<group>"; };
 		FA1A96662B50C584001026B7 /* DarkModeToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeToggleView.swift; sourceTree = "<group>"; };
-		FABE825A2B31401C00996F85 /* TipSplitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipSplitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABE825A2B31401C00996F85 /* TipHarmony.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipHarmony.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABE825D2B31401C00996F85 /* TipHarmony.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipHarmony.swift; sourceTree = "<group>"; };
 		FABE825F2B31401C00996F85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FABE82612B31401E00996F85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		FABE82512B31401C00996F85 = {
 			isa = PBXGroup;
 			children = (
-				FABE825C2B31401C00996F85 /* TipSplitter */,
+				FABE825C2B31401C00996F85 /* TipHarmony */,
 				FABE825B2B31401C00996F85 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,12 +51,12 @@
 		FABE825B2B31401C00996F85 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FABE825A2B31401C00996F85 /* TipSplitter.app */,
+				FABE825A2B31401C00996F85 /* TipHarmony.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FABE825C2B31401C00996F85 /* TipSplitter */ = {
+		FABE825C2B31401C00996F85 /* TipHarmony */ = {
 			isa = PBXGroup;
 			children = (
 				FABE825D2B31401C00996F85 /* TipHarmony.swift */,
@@ -68,7 +68,7 @@
 				FABE82612B31401E00996F85 /* Assets.xcassets */,
 				FABE82632B31401E00996F85 /* Preview Content */,
 			);
-			path = TipSplitter;
+			path = TipHarmony;
 			sourceTree = "<group>";
 		};
 		FABE82632B31401E00996F85 /* Preview Content */ = {
@@ -82,9 +82,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FABE82592B31401C00996F85 /* TipSplitter */ = {
+		FABE82592B31401C00996F85 /* TipHarmony */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FABE82682B31401E00996F85 /* Build configuration list for PBXNativeTarget "TipSplitter" */;
+			buildConfigurationList = FABE82682B31401E00996F85 /* Build configuration list for PBXNativeTarget "TipHarmony" */;
 			buildPhases = (
 				FABE82562B31401C00996F85 /* Sources */,
 				FABE82572B31401C00996F85 /* Frameworks */,
@@ -94,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = TipSplitter;
+			name = TipHarmony;
 			productName = WeSplit;
-			productReference = FABE825A2B31401C00996F85 /* TipSplitter.app */;
+			productReference = FABE825A2B31401C00996F85 /* TipHarmony.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FABE82552B31401C00996F85 /* Build configuration list for PBXProject "TipSplitter" */;
+			buildConfigurationList = FABE82552B31401C00996F85 /* Build configuration list for PBXProject "TipHarmony" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FABE82592B31401C00996F85 /* TipSplitter */,
+				FABE82592B31401C00996F85 /* TipHarmony */,
 			);
 		};
 /* End PBXProject section */
@@ -343,7 +343,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FABE82552B31401C00996F85 /* Build configuration list for PBXProject "TipSplitter" */ = {
+		FABE82552B31401C00996F85 /* Build configuration list for PBXProject "TipHarmony" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FABE82662B31401E00996F85 /* Debug */,
@@ -352,7 +352,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FABE82682B31401E00996F85 /* Build configuration list for PBXNativeTarget "TipSplitter" */ = {
+		FABE82682B31401E00996F85 /* Build configuration list for PBXNativeTarget "TipHarmony" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FABE82692B31401E00996F85 /* Debug */,
