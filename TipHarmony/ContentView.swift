@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+
     // Initial configuration for navigation bar appearance
     init() {
         let coloredNavAppearance = UINavigationBarAppearance()
