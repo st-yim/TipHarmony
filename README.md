@@ -1,6 +1,6 @@
 # Tip Harmony App
 
-<img width="512" alt="appstore1024" src="https://github.com/st-yim/TipHarmony/assets/129474155/e02754bf-844c-4757-b476-7fb2c378d1ed">
+<img width="256" alt="mac512" src="https://github.com/st-yim/TipHarmony/assets/129474155/93701375-9cc8-41cd-97d8-efb256faad42">
 
 Welcome to Tip Harmony, the app that makes splitting bills and calculating tips a breeze!
 
