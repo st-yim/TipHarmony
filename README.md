@@ -28,7 +28,7 @@ Tip Harmony is a user-friendly application designed to simplify the process of s
 To get started with Tip Harmony, follow these simple steps:
 
 1. **Installation:**
-   - Download the app from [App Store].
+   - Download the app from [https://apps.apple.com/us/app/tipharmony/id6475914040].
    - Install the app on your device.
 
 2. **Setup:**
